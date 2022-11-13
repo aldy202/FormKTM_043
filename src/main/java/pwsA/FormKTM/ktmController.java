@@ -28,7 +28,7 @@ public class ktmController {
             @RequestParam("nim")String nim,
             @RequestParam("jurusan") String jurusan,
             @RequestParam("image")MultipartFile img,
-            @DateTimeFormat (pattern = "yyyy-MM-dd") Date date, Model model) throws IOException
+            @RequestParam("tanggal") @DateTimeFormat (pattern = "yyyy-MM-dd") Date date, Model model) throws IOException
     {
         SimpleDateFormat nwTgl = new SimpleDateFormat("EE-dd-MMM-yyyy");
         String tgl = nwTgl.format(date);
