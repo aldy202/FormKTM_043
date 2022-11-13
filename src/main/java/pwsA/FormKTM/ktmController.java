@@ -27,10 +27,11 @@ public class ktmController {
     public String getDATAKTM(@RequestParam("name")String name,
             @RequestParam("nim")String nim,
             @RequestParam("jurusan") String jurusan,
+            @RequestParam("email") String email,
             @RequestParam("image")MultipartFile img,
             @RequestParam("tanggal") @DateTimeFormat (pattern = "yyyy-MM-dd") Date date, Model model) throws IOException
     {
-        SimpleDateFormat nwTgl = new SimpleDateFormat("EE-dd-MMM-yyyy");
+        SimpleDateFormat nwTgl = new SimpleDateFormat("dd-MMMM-yyyy");
         String tgl = nwTgl.format(date);
         
         String image = Base64.encodeBase64String(img.getBytes());
@@ -39,6 +40,7 @@ public class ktmController {
         model.addAttribute("nama", name);
         model.addAttribute("NIM", nim);
         model.addAttribute("jrsn", jurusan);
+        model.addAttribute("emal", email);
         model.addAttribute("tgl", tgl);
         model.addAttribute("img", imge);
         

@@ -13,7 +13,7 @@ and open the template in the editor.
             body {
                 margin: 0;
                 padding: 0;
-                background: #ff9933 ;
+                background: linear-gradient(to right, #ffcc00, #ffff99, #ff9933);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -25,7 +25,7 @@ and open the template in the editor.
                 top: 50%;
                 left: 45%;
                 transform: translate(-30%, -50%);
-                background: rgba(4, 29, 23, 0.5);
+                background: wheat;
                 padding: 50px;
                 width: 270px;
                 box-shadow: 0px 0px 25px 10px black;
@@ -33,7 +33,7 @@ and open the template in the editor.
               }
               .avatar {
                 font-size: 30px ;
-                background: #ff0000;
+                background: #cccc00;
                 width: 50px;
                 height: 50px;
                 line-height: 50px;
@@ -46,7 +46,7 @@ and open the template in the editor.
               }
               .login h2 {
                 text-align: center;
-                color: white;
+                color: black;
                 font-size: 30px;
                 font-family: sans-serif;
                 letter-spacing: 3px;
@@ -62,7 +62,7 @@ and open the template in the editor.
               }
               .box-login i {
                 font-size: 23px;
-                color: white;
+                color: black;
                 padding: 0;
               }
               .box-login input {
@@ -71,15 +71,15 @@ and open the template in the editor.
                 background: none;
                 border: none;
                 outline: none;
-                color: white;
+                color: black;
                 font-size: 18px;
               }
               .box-login input::placeholder {
-                color: white;
+                color: black;
               }
               .btn-login
               .box-login input:hover{
-                background: rgba(10, 10, 10,s 0.5);
+                background: black;
               }
               .btn-login {
                 margin-left: 10px;
@@ -88,7 +88,7 @@ and open the template in the editor.
                 border: 1px solid white;
                 width: 92.5%;
                 padding: 10px;
-                color: white;
+                color: black;
                 font-size: 18px;
                 letter-spacing: 3px;
                 cursor: pointer;
@@ -141,6 +141,11 @@ and open the template in the editor.
                 <div class="box-login">
                   <i class="fas fa-lock"></i>
                   <input type="text" name="jurusan" placeholder="Jurusan">
+                </div>
+                
+                <div class="box-login">
+                  <i class="fas fa-lock"></i>
+                  <input type="email" name="email" placeholder="Email">
                 </div>
 
                 <div class="box-login">
