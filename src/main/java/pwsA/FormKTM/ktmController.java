@@ -31,7 +31,7 @@ public class ktmController {
             @RequestParam("image")MultipartFile img,
             @RequestParam("tanggal") @DateTimeFormat (pattern = "yyyy-MM-dd") Date date, Model model) throws IOException
     {
-        SimpleDateFormat nwTgl = new SimpleDateFormat("dd-MMMM-yyyy");
+        SimpleDateFormat nwTgl = new SimpleDateFormat("dd MMMM yyyy");
         String tgl = nwTgl.format(date);
         
         String image = Base64.encodeBase64String(img.getBytes());
